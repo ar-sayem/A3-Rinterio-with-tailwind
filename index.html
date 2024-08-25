@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +22,11 @@
     </style>
 </head>
 <body class="font-family">
-    
-    <header class="lg:w-[80%] md:w-[90%] w-full mx-auto  border border-sky-500 bg-[rgb(254,254,254)] ">
+    <!-- -----HEADER START--------- -->
+    <header class="lg:w-[80%] md:w-[90%] w-full mx-auto px-5 md:px-0   bg-[rgb(254,254,254)] ">
         <!-- nav part -->
-        <nav class=" flex justify-between items-center border border-sky-500 w-full mx-auto lg:mt-12 mt-8">
-            <!-- <div id="logo" class="text-xl"><i class="fa-solid fa-arrow-right  mr-2 h-10 w-10 bg-[#abef5f] rounded-6xl "></i>  Rinterio </div>
-            <div class=""></div> -->
+        <nav class=" flex justify-between items-center border border-sky-500  my-8 md:my-[60px] ">
+           
             <!-- nav Part-1 -->
             <div class="flex items-center">
             <i class="fa-solid fa-arrow-right  w-8 h-8 bg-[#abef5f] flex justify-center items-center rounded-[50%] -rotate-45 mr-2"></i>
@@ -44,69 +44,107 @@
             </div>
             <!-- nav part-3 -->
             <div class=" flex items-center gap-4">
-                <div class="md:flex items-center gap-4 hidden sm:block">
+                <div class="lg:flex md:flex items-center gap-4 hidden">
                     <i class="fa-solid fa-magnifying-glass h-12 w-12 rounded-full bg-white flex justify-center items-center  cursor-pointer   ">  </i>
 
                  <i class="fa-solid fa-cart-shopping h-12 w-12 rounded-full bg-white flex justify-center items-center cursor-pointer   "></i>
 
                 <button class=" flex items-center justify-center h-14 w-[212px] rounded-3xl bg-[#abef5f] gap-2 font-extrabold text-[20px] ">Book Consult  <i class="fa-solid fa-arrow-right  w-8 h-8 bg-black text-white flex justify-center items-center rounded-[50%] -rotate-45 "></i> </button>
                 </div>
-
-                <i class="fa-solid fa-bars h-12 w-12 rounded-full bg-white flex justify-center items-center lg:hidden"></i>
-                
+                <i class="fa-solid fa-bars h-12 w-12 rounded-full bg-white flex justify-center items-center lg:hidden"></i>                
             </div>
 
-         
-        
         </nav>
         <!-- banner part -->
-         <div id="banner " >
-            <img src="./assets/banner.png" alt="" class="mx-auto md:mt-[50px] md:mb-[20px] w-[260px] h-[160px] lg:w-[570px] lg:h-[350px]">
-            <h2 class="text-center font-extrabold text-[28px] lg:text-[64px] text-[#212121]  md:mb-[20px]">A barn house of this design has a <br>striking appearance</h2>
-            <p class="text-center text-gray-500 font-semibold md:mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
-            <div class="flex justify-center">
-                <button class=" flex items-center justify-center h-14 w-[212px] rounded-3xl border border-[#abef5f] bg-[#d4f6ae] gap-2 font-extrabold text-[20px] ">View Details <i class="fa-solid fa-arrow-right  w-9 h-9 bg-[#abef5f] text-black flex justify-center items-center rounded-[50%] -rotate-45 "></i> </button>
-            </div>
+         <div id="banner " class="text-center ">
 
+            <img src="./assets/banner.png" alt="banner_img" class="mx-auto w-[260px] h-[160px] lg:w-[570px] lg:h-[350px]">
+            <h2 class="text-[#212121] font-extrabold text-[28px] lg:text-[64px] mb-4 md:mb-5">A barn house of this design has a <br>striking appearance</h2>
+            <p class=" text-gray-500   font-semibold mb-5 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
+            <div class="flex justify-center">
+                <button class=" flex items-center justify-center h-14 w-[335px] md:w-[212px] rounded-3xl border border-[#abef5f] bg-[#d4f6ae] gap-2 font-extrabold text-[20px] 
+                mb-10 md:mb-20 ">View Details <i class="fa-solid fa-arrow-right  w-9 h-9 bg-[#abef5f] text-black flex justify-center items-center rounded-[50%] -rotate-45 "></i> </button>
+            </div>
 
 
          </div>
     </header>
+    <main>
+        <!-- ABOUT US SECTION -->
+        <section id="ABOUT-US" class="bg-[#f4f4f4]   mb-[100px] " >
+            <div class="hidden lg:block  border border-[red]  "><img src="./assets/Vector.png" alt="vector-img" class="my-3 relative left-[120px]"></div>
+            <!-- about-section-container -->
+            <div id="about-container" class=" lg:flex justify-between lg:w-[80%] mx-auto   border border-[green] ">
 
+                <!-- about-left-container -->
+                 <div class="ABOUT-TEXT-CONTAINER space-y-6 lg:w-2/5 mx-5 my-8 lg:mx-0 lg:my-0 sm:grid sm:grid-cols-2 lg:flex lg:flex-col gap-x-5 border border-[red] ">
 
-   
-    <main class="mt-[100px]">
-        <!-- residential part -->
-        <section id="Residential" class="bg-[rgb(244,244,244)] w-[100%] ">
-            <div class="  border border-sky-500 w-[90%] m-auto"><img src="./assets/Vector.png" alt=""></div>
-            <div id=" Residential-container" class=" w-[80%] m-auto">
-                
-                <div class="text-container space-y-5">
-                   <div class="mt-5"> <button class="bg-[rgb(254,254,254)] p-2 w-[125px] h-[38px] rounded-3xl "> <i class="fa-solid fa-arrow-right "></i>   about us</button>
-                   </div> 
-                   <h3 class="text-5xl font-extrabold">We design thoughtful,<br> liveable spaces</h3>
-                   <p class="text-gray-600">The barn house captivates with its blend of rustic charm and <br> 
-                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
-                    <div class=" flex gap-4 p-5 bg-white rounded-xl"><img src="./assets/commercial.png" alt="">
-                       <div class="">
-                        <h3 class="text-[20px] font-bold">Commercial</h3>
-                        <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
-                       </div>
+                        <div class="text-center lg:text-left col-span-2 "> <button class="bg-[rgb(254,254,254)] p-2 w-[125px] h-[38px] rounded-3xl "> <i class="fa-solid fa-arrow-right "></i>   about us</button>                            
+                        </div>
+
+                        <h3 class="text-[24px] md:text-[40px] font-extrabold text-[#212121]  text-center lg:text-left col-span-2" >We design thoughtful,<br> liveable spaces</h3>
+                        <p class="font-medium text-[#494949]  text-center lg:text-left col-span-2" >The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <!-- about section left card 1 -->
+                        <div class=" flex gap-4 p-5 bg-white rounded-2xl"><img src="./assets/commercial.png" alt="" class="h-10 w-10 lg:h-16 lg:w-16" >
+                            <div class="">
+                             <h3 class="text-[20px] font-bold">Commercial</h3>
+                             <p class="text-[14px] font-medium text-[#737373]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                            </div>
+                         </div>
+                         <div class=" flex gap-4 p-5 bg-white rounded-2xl"><img src="./assets/residential.png" alt="" class="h-10 w-10 lg:h-16 lg:w-16" >
+                            <div class="">
+                             <h3 class="text-[20px] font-bold">Residential</h3>
+                             <p class="text-[14px] font-medium text-[#737373]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                            </div>
+                         </div>
+     
+                 </div>
+
+                 <!-- about-section-right-container -->
+                    <div class="mt-4 lg:mt-0 mx-5 h-[220px] md:h-[380px] lg:h-auto  mb-24  " >
+                         <img src="./assets/Rectangle.png" alt="" class=" h-[220px] md:h-[380px] lg:h-auto   object-cover w-[100%] rounded-xl " > 
                     </div>
-
-                   
-
-                </div>
-                <div class="img-container">
-                    
-                </div>
             </div>
         </section>
+        <!-- ABOUT SESTION END -->
 
+        <!-- ------Review SECTION---------- -->
+        <div id="Review-section" class="lg:w-[80%] grid grid-cols-1 gap-6">
+            <div class="REVIEW1 text-center"><span class=" "><i class="fa-regular fa-message-lines text-3xl" ></i></span> <br>
+                <span class="text-[40px] font-extrabold">235+</span> <br>
+                <span class="text-[16px] text-[#737373]">Happy Client Review</span>
+            </div>
+            <div class="REVIEW2 text-center"><span class=" "><i class=" fa-light fa-sheet-plastic text-3xl" ></i></span> <br>
+                <span class="text-[40px] font-extrabold">50+</span> <br>
+                <span class="text-[16px] text-[#737373]">Work Departments</span>
+            </div>
+            <div class="REVIEW3 text-center"><span class=" "><i class="fa-thin fa-users text-3xl" ></i></span> <br>
+                <span class="text-[40px] font-extrabold">30k+</span> <br>
+                <span class="text-[16px] text-[#737373]">Our Happy Client</span>
+            </div>
+            <div class="REVIEW4 text-center"><span class=" "><i class="fa-light fa-user-group text-3xl" ></i></span> <br>
+                <span class="text-[40px] font-extrabold">307+</span> <br>
+                <span class="text-[16px] text-[#737373]">Staff Members</span>
+            </div>
+
+           
+
+        </div>
     </main>
 
-   
-     <footer></footer>
 
+  
+
+   
+     <footer>
+
+        <i class="fa-light fa-users"></i>
+        <i class="fa-thin fa-users"></i>
+        <i class="fa-light fa-user-group"></i>
+        <i class="fa-sharp fa-thin fa-sheet-plastic"></i>
+        <i class="fa-solid fa-sheet-plastic"></i>
+        <i class="fa-light fa-sheet-plastic"></i>
+     </footer>
+    
 </body>
 </html>
